@@ -9,7 +9,7 @@ export const Email = (props: any) => {
     <Html>
       <Section style={main}>
         <Container style={container}>
-          <Text style={heading}>안녕하세요, '23 전남대학교 PIMM 알고리즘 파티에 관심가져주셔서 감사합니다.</Text>
+          <Text style={heading}>안녕하세요, {"'"}23 전남대학교 PIMM 알고리즘 파티에 관심가져주셔서 감사합니다.</Text>
           <Text style={paragraph}>등록을 위한 인증코드입니다:</Text>
           <Text style={paragraph}>{code}</Text>
         </Container>

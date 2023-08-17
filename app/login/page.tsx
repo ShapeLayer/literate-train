@@ -52,7 +52,7 @@ export default function Login() {
         {/* hero */}
         <div className={styles.section.wrapper}>
           <h1 className={styles.title}>대회 등록 수정</h1>
-          <h2 className={styles.subtitle}>'23 전남대학교 PIMM 알고리즘 파티</h2>
+          <h2 className={styles.subtitle}>{"'"}23 전남대학교 PIMM 알고리즘 파티</h2>
         </div>
 
         {/* login form */}

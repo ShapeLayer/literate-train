@@ -95,7 +95,7 @@ export default function Register() {
         }
       })
   }
-  const invokeVerifyMail = (e) => {
+  const invokeVerifyMail = (e: any) => {
     e.preventDefault()
     _requestVerifyMail()
   }
@@ -135,15 +135,15 @@ export default function Register() {
     })
   }
 
-  const handleOnChangeHandler = (e) => {
+  const handleOnChangeHandler = (e: any) => {
     setHandleState(e.target.value)
     _queryHandleExists()
   }
-  const mailOnChangeHandler = (e) => {
+  const mailOnChangeHandler = (e: any) => {
     setMailState(e.target.value)
     _queryMailExists()
   }
-  const codeOnChangeHandler = (e) => {
+  const codeOnChangeHandler = (e: any) => {
     setMailCodeState(e.target.value)
   }
 
@@ -213,7 +213,7 @@ export default function Register() {
         }
       })
   }
-  const formOnSubmitHandler = (e) => {
+  const formOnSubmitHandler = (e: any) => {
     e.preventDefault()
     _fetchSubmission()
   }
@@ -238,13 +238,13 @@ export default function Register() {
         {/* hero */}
         <div className={styles.section.wrapper}>
           <h1 className={styles.title}>대회 재학생 순위 집계 등록</h1>
-          <h2 className={styles.subtitle}>'23 전남대학교 PIMM 알고리즘 파티</h2>
+          <h2 className={styles.subtitle}>{"'"}23 전남대학교 PIMM 알고리즘 파티</h2>
           <div className={styles.section.subwrapper}>
             <p className={styles.paragraph}>
-              이 폼은 백준 온라인 저지에서 진행될 "'23 전남대학교 PIMM 알고리즘 파티"의 전남대학교 재학생 참가자를 확인하기 위해 준비되었습니다.
+              이 폼은 백준 온라인 저지에서 진행될 {'"\''}23 전남대학교 PIMM 알고리즘 파티{'"'}의 전남대학교 재학생 참가자를 확인하기 위해 준비되었습니다.
             </p>
             <p className={styles.paragraph}>
-              대회 개최자인 PIMM 알고리즘 스터디(이하 개최자)는 재학생 식별 및 대회 참여 재학생 통계, 대회 결산을 위해 "백준 온라인 저지 아이디"(이하 BOJ 핸들)와 "전남대학교 도메인 메일 주소(이하 메일 주소)"를 수집합니다.
+              대회 개최자인 PIMM 알고리즘 스터디(이하 개최자)는 재학생 식별 및 대회 참여 재학생 통계, 대회 결산을 위해 {'"'}백준 온라인 저지 아이디{'"'}(이하 BOJ 핸들)와 {'"'}전남대학교 도메인 메일 주소(이하 메일 주소){'"'}를 수집합니다.
             </p>
           </div>
           <div className={styles.section.subwrapper}>

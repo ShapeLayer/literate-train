@@ -67,7 +67,7 @@ export default function Registered() {
       {/* hero */}
       <div className={styles.section.wrapper}>
         <h1 className={styles.title}>대회 등록 완료</h1>
-        <h2 className={styles.subtitle}>'23 전남대학교 PIMM 알고리즘 파티</h2>
+        <h2 className={styles.subtitle}>{"'"}23 전남대학교 PIMM 알고리즘 파티</h2>
         <p className={styles.paragraph}>대회 교내 순위 집계 등록이 완료되었습니다.</p>
         {/*<p className={styles.paragraph}>아래 로그인 코드를 꼭 기억하세요! 등록 정보 수정, 등록 철회에 사용됩니다.</p>*/}
         <p className={styles.paragraph}>등록 정보 수정, 등록 철회, 문의 사항은 <a href="mailto:me@jonghyeon.me">me@jonghyeon.me</a>에 메일을 보내주세요.</p>      </div>
