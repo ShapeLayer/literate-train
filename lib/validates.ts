@@ -2,6 +2,7 @@
 import { prisma } from '@/lib/prisma'
 
 const handleExists = async (handle: string) => {
+  handle = handle.trim()
   const queried = await prisma.user.findFirst({
     where: {
       bojHandle: handle

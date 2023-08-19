@@ -9,7 +9,7 @@ const LOGIN_CODE_LENGTH = Number(process.env.LOGIN_CODE_LENGTH) || 10
 
 export const POST = async (request: Request) => {
   const body = await request.json()
-  const bojHandle = body['boj-handle'] as string
+  const bojHandle = (body['boj-handle'] as string).trim()
   const jnuEmail = body['jnu-mail'] as string
   const emailCode = body['mail-code'] as string
   let uploadFile = false
