@@ -318,7 +318,7 @@ export default function Register() {
                   name="jnu-mail"
                   type="mail"
                   className={styles.input.input.input}
-                  pattern="'.*?@jnu\.ac\.kr'"
+                  pattern=".*?@jnu\.ac\.kr"
                   placeholder="name@jnu.ac.kr"
                   value={mailState}
                   onChange={mailOnChangeHandler}
