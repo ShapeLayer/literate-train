@@ -313,7 +313,7 @@ export default function Register() {
             <div className={styles.input.wrapper}>
               <label htmlFor="mail" className={styles.input.label.label}>학교 이메일 주소</label>
               <div className={styles.input.input.wrapper}>
-                {/*<input
+                <input
                   id="mail-jnulimit"
                   name="jnu-mail"
                   type="mail"
@@ -326,7 +326,7 @@ export default function Register() {
                     borderColor: mailInputBorder,
                     display: displayLimitMailInput
                   }}
-                />*/}
+                />{/*
                 <input
                   id="mail-unlimit"
                   name="jnu-mail"
@@ -340,7 +340,7 @@ export default function Register() {
                     display: displayUnlimitMailInput
                   }}
                   required
-                />
+                />*/}
                 <button className={styles.input.sideButton} onClick={invokeVerifyMail}>인증</button>
               </div>
               <p className={styles.paragraph}>{mailInvokeState}</p>
